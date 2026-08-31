@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity 1: Web Architecture & Semantic HTML5</title>
+
+<!-- external -->
+   <link rel="stylesheet" href="style.css">
+
+   <!-- internal --> 
+    <style>
+    article {
+        border-left: 3px solid #4e97cc;
+        padding: 5px;
+        margin: 3px;
+    }
+
+    #multimedia {
+        padding: 8px;
+    }
+
+    #form-section {
+        padding: 8px;
+    }
+</style>
+</head>
+<body>
+    <header>
+        <!-- inline #1 -->
+        <h1 style="color: white;">Web Architecture & Semantic HTML5</h1>
+
+        <nav>
+            <a href="#architecture">Web Architecture</a>
+            <a href="#multimedia">Multimedia</a>
+            <a href="#form-section">Form Validation</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="architecture">
+            <h2>1. Web Architecture Concepts</h2>
+            <article>
+                <h4>Client-Server Model</h4>
+                    <p>The Client(your browser) sends a request, and the Server returns the web page response.</p>
+            </article>
+
+            <article>
+                <h4>DNS (Domain Name System)</h4>
+                    <p>Translate the human-friendly domain name (like example.com) into numeric IP Addresses.</p>
+            </article>
+
+            <article>
+                <h4>HTTP vs. HTTPS</h4>
+                <p>HTTP sends data in plain text, while HTTPS encrypts data security using SSL/TLS.</p>
+            </article>
+        </section>
+
+        <section id="multimedia">
+            <h2>2. HTML5 Multimedia</h2>
+                <h3>Audio Tag: </h3>
+                <!-- inline #2 -->
+                <audio src="horse.mp3" controls style="border: 2px solid #4592c9; border-radius: 20px;">Audio</audio><br>
+
+                <h3>Video Tag: </h3>
+                <video src="mov_bbb.mp4" controls>Video</video>
+        </section>
+
+        <section id="form-section">
+            <h2>3. HTML5 Form & Validation</h2>
+
+            <form>
+                <label for="fullname">Full Name (Required): </label><br>
+                    <input type="text"><br><br>
+
+                <label for="email">Email Address (Native Validation): </label><br>
+                    <input type="email"><br><br>
+
+                <label for="protocol">Which protocol uses encryption? </label><br>
+
+                <select name="protocol" id="protocol">
+                    S<option value="">--Select an Option--</option>
+                </select>
+                <br><br>
+                <!-- inline #3 -->
+                <button type="submit" style="background-color: #36af3b; height: 25px; color: white;">Submit Form</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
